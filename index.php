@@ -11,7 +11,7 @@ $movie2 = new Movie();
 
 # Popolo movie 1
 $movie1->setMovieName("Rocky 1");
-$movie1->setMovieBudget(10000000);
+$movie1->setMovieBudget(59000000);
 $movie1->setMovieRelease("1989-10-21");
 $movie1->setMovieGenre("Action");
 # Inserisco Attori Movie 1
@@ -23,7 +23,7 @@ $movie1->addMovieActor("Burt","Young",48);
 
 # Popolo movie 2
 $movie2->setMovieName("Shutter Island");
-$movie2->setMovieBudget(13500000);
+$movie2->setMovieBudget(130500000);
 $movie2->setMovieRelease("2010-10-20");
 $movie2->setMovieGenre("Drammatico");
 # Inserisco Attori Movie 2

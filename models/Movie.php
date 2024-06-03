@@ -21,13 +21,13 @@ class Movie {
     }
 
     public function setMovieGenre(string $_movie_genre){
-        $genre = new Genre();
-        $genre->setGenre($_movie_genre);
+        $genre = new Genre($_movie_genre);
         $this->movie_genre = $genre;
     }
 
     public function getMovieInfo(){
-        $format_budget = number_format($this->movie_budget, 0,'','.');
+        #number_format(numero in entrata, numeri dopo la virgola, divisore decimali, migliaia)
+        $format_budget = number_format($this->movie_budget, 2,',','.');
         return "Film : ".$this->movie_name."<br> Rilasciato in data : ".$this->movie_release_date."<br> Costato : ".$format_budget." $ <br> Genere : ".$this->movie_genre->getGenre();
     }
 

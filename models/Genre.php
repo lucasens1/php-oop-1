@@ -4,9 +4,9 @@ class Genre {
     private string $movie_genre;
 
     #---------------------------- Set & Get ---------------------------
-
-    public function setGenre($_movie_genre){
-        $this->movie_genre = $_movie_genre;
+    public function __construct($_genre_name)
+    {
+        $this->movie_genre=$_genre_name;
     }
 
     public function getGenre(){
